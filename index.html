@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive Tabs - Demo</title>
+	</head>
+	<body>
+		<h1 class="text-center">Welcome to Responsive Tabs</h1>
+		<div class="tab-container">
+		  <nav role='navigation'>
+		    <ul>
+		      <li><a href="#tab-1" class="active">Plugin Info</a></li>
+		      <li><a href="#tab-2">Lorem ipsum 1</a></li>
+		      <li><a href="#tab-3">Lorem ipsum 2</a></li>
+		    </ul>
+		  </nav>
+
+		  <div id="tab-1" class="active">
+		    <h2>INFORMATION: </h2> Tabs separate mutually exclusive content.
+		    <br/>Only one tab is active at a time and therefore only the content related to the active tab is visible at any given time.
+		    <br/><br/>
+		    <h3>Dependency: </h3>This plugin is only dependent on jQuery.
+		    <br/><br/>
+		    <h3>Usage: </h3>Use the following HTML Markup:
+		    <br/>
+		    <div class="code">
+		    	<code>
+			    	&lt;nav role='navigation'&gt;<br/>
+			    	&nbsp;&nbsp;&lt;ul&gt;<br/>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br/>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#tab-id1" class="active"&gt;Tab1&lt;/a&gt;<br/>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br/>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#tab-id2"&gt;Tab2&lt;/a&gt;<br/>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+			    	&nbsp;&nbsp;&lt;/ul&gt;<br/>
+			    	&lt;/nav&gt;<br/>
+			    	&lt;div id="tab-id1" class="active"&gt;<br/>
+			    	&nbsp;&nbsp;&lt;h3&gt;This is tab 1.&lt;/h3&gt;<br/>
+			    	&lt;/div&gt;<br/>
+			    	&lt;div id="tab-id2"&gt;<br/>
+			    	&nbsp;&nbsp;&lt;h3&gt;This is tab 2.&lt;/h3&gt;<br/>
+			    	&lt;/div&gt;<br/>
+			    </code>
+		    </div>
+		    <br/>
+		    And in your html file, call the plugin as:
+		    <br/>
+		    <div class="code">
+		    	<code>
+			    	$('nav').responsiveTab();
+			    </code>
+		    </div>
+		    <small>
+		    	PS: To select a tab by default, add class "active" to the particular tab and it's content div.
+		    </small>
+		  </div>
+
+		  <div id="tab-2">
+		    <h2>LOREM IPSUM 1: </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores numquam cupiditate aliquam quisquam repellendus fugit eaque asperiores voluptatem ut accusamus soluta corporis in facere quae provident itaque magni eum repellat ducimus dolore. Beatae
+		    aperiam accusamus at voluptatem ad sunt mollitia perspiciatis tempora numquam rerum aliquam deserunt illum necessitatibus nisi omnis.
+		  </div>
+
+		  <div id="tab-3">
+		    <h2>LOREM IPSUM 2: </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores numquam cupiditate aliquam quisquam repellendus fugit eaque asperiores voluptatem ut accusamus soluta corporis in facere quae provident itaque magni eum repellat ducimus dolore. Beatae
+		    aperiam accusamus at voluptatem ad sunt mollitia perspiciatis tempora numquam rerum aliquam deserunt illum necessitatibus nisi omnis.
+		  </div>
+
+		</div>
+		<footer align="right">
+			<a href="https://in.linkedin.com/in/shahsank3t" target="_blank">Sanket Shah</a>
+		</footer>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/responsive-tabs.js"></script>
+		<script type="text/javascript">
+			$('nav').responsiveTab();
+		</script>
+	</body>
+</html>
